@@ -20,3 +20,66 @@
 
 ```bash
 make           # 或 cmake + make
+
+推流测试
+ffmpeg -re -i test.mp4 -f flv rtmp://localhost/live/stream
+
+依赖
+FFmpeg ≥ 5.x
+
+SDL2（可选）
+
+OpenCV（可选）
+
+GCC / ARM-GCC 工具链
+
+本项目遵循 MIT License
+
+
+---
+
+## ⚙️ `.gitignore` 推荐
+
+```gitignore
+# 编译产物
+build/
+*.o
+*.elf
+*.bin
+*.map
+*.hex
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+
+# 代码编辑器缓存
+.vscode/
+.idea/
+*.swp
+
+# 运行生成的临时文件
+*.log
+*.tmp
+output/
+
+# Python / 脚本缓存
+__pycache__/
+*.pyc
+
+📜 开源协议（MIT License）
+MIT License
+
+Copyright (c) 2025 畅
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+
+（以下略，可在 GitHub 创建仓库时自动填充）
+
+
+
+
+
+
