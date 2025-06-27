@@ -20,7 +20,7 @@
 
 ```bash
 make           # 或 cmake + make
-
+```
 推流测试
 ffmpeg -re -i test.mp4 -f flv rtmp://localhost/live/stream
 
